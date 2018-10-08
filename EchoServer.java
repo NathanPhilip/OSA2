@@ -1,3 +1,9 @@
+/*
+Student 1: Heyzzen Flores
+Student 2: Nathan Philip
+Course: SYST44288
+*/
+
 import java.net.*;
 import java.io.*;
 
@@ -8,7 +14,7 @@ public class EchoServer {
         try (
             ServerSocket serverSocket =
                 new ServerSocket(3000);//port 3000
-            Socket clientSocket = serverSocket.accept();     
+            Socket clientSocket = serverSocket.accept();  //accept method connects client to server        
             PrintWriter out =
                 new PrintWriter(clientSocket.getOutputStream(), true);                   
             BufferedReader in = new BufferedReader(
